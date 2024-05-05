@@ -1,0 +1,222 @@
+focus_tree = {
+	id = URL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = URL
+		}
+	}
+	default = no
+	focus = {
+		id = URL_this_our_land
+		icon = GFX_goal_generic_demand_territory
+		cost = 2,00
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = URL_we're_staying
+		icon = GFX_focus_SOV_third_rome
+		cost = 1,00
+		prerequisite = {
+			focus = URL_this_our_land
+		}
+		mutually_exclusive = {
+			focus = URL_propaganda_of_freedom
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = URL_to_join_the_state
+		icon = GFX_goal_generic_alliance
+		cost = 1,00
+		prerequisite = {
+			focus = URL_we're_staying
+		}
+		mutually_exclusive = {
+			focus = URL_Ural_AR
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = URL_Ural_AR
+		icon = GFX_focus_focus_fra_revolution_upmost
+		cost = 1,00
+		prerequisite = {
+			focus = URL_we're_staying
+		}
+		mutually_exclusive = {
+			focus = URL_to_join_the_state
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = URL_subsidized_region
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_Ural_AR
+		}
+		mutually_exclusive = {
+			focus = URL_the_"Wealth_Tax"
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = URL_the_"Wealth_Tax"
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_Ural_AR
+		}
+		mutually_exclusive = {
+			focus = URL_subsidized_region
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = URL_propaganda_of_freedom
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 2,00
+		prerequisite = {
+			focus = URL_this_our_land
+		}
+		mutually_exclusive = {
+			focus = URL_we're_staying
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = URL_a_new_country
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 1,00
+		prerequisite = {
+			focus = URL_propaganda_of_freedom
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = URL_USSR_does_not_interfere
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_a_new_country
+		}
+		mutually_exclusive = {
+			focus = URL_we_are_at_war!
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = URL_we_are_at_war!
+		icon = GFX_focus_attack_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = URL_a_new_country
+		}
+		mutually_exclusive = {
+			focus = URL_USSR_does_not_interfere
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = URL_territorial_structure
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_USSR_does_not_interfere
+			focus = URL_we_are_at_war!
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = URL_the_people's_militia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_we_are_at_war!
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = URL_mobilization_of_the_Urals
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_the_people's_militia
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = URL_open_old_warehouses
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_the_people's_militia
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = URL_to_raise_the_"small_nations"..
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_mobilization_of_the_Urals
+			focus = URL_open_old_warehouses
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = URL_The_second_wave_of_mobilization
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_mobilization_of_the_Urals
+			focus = URL_open_old_warehouses
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = URL_..and_take_them_under_your_wing
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = URL_to_raise_the_"small_nations"..
+		}
+		x = 28
+		y = 7
+
+	}
+	}
